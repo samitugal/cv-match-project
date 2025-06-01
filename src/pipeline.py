@@ -33,7 +33,7 @@ def run_pipeline(file_path: str):
     """
     This function runs the pipeline for a given file path.
     """
-    text = read_document(file_path)
+    text = read_document(file_path, advanced=True)
     language = detect_doc_language(text)
 
     if language == "tr":

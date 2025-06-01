@@ -138,9 +138,12 @@ def read_docx(file_path: str) -> Dict[str, Any]:
     return reader.extract_all_content()
 
 
-def read_document(file_path: str) -> Dict[str, Any]:
+def read_document(file_path: str, advanced: bool = False) -> Dict[str, Any]:
     if file_path.endswith(".pdf"):
-        return read_pdf_with_ocr(file_path)
+        if advanced:
+            return read_pdf_with_ocr(file_path)
+        else:
+            return read_pdf(file_path)
     elif file_path.endswith(".docx"):
         return read_docx(file_path)
     else:
