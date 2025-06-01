@@ -1,0 +1,35 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+*.egg-info
+
+# Pytest
+.pytest_cache
+.env
+
+poppler*/
+
+*.dll
+*.pth
+*.pt
+*.bin
+*.json
+*.jsonl
+*.jsonl.gz
+*.jsonl.gz.part
+*.jsonl.gz.part.1
+
+*.pdf
+*.docx
+*.doc
+*.txt
+*.csv
+*.xlsx
+*.xls
